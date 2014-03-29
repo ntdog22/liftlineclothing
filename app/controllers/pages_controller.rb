@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  def splash
+  end
+
   def home
   end
 
@@ -9,5 +12,8 @@ class PagesController < ApplicationController
   end
 
   def products
+  end
+
+  def shoppingbag
   end
 end

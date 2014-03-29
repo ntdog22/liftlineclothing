@@ -1,9 +1,11 @@
 Liftline::Application.routes.draw do
   get "users/new"
-  match "/home", to: "pages#home",        via: "get"
+  root "pages#home"
+   match "/splash", to: "pages#splash",      via: "get"
   match "/about", to: "pages#about",      via: "get"
   match "/contact", to: "pages#contact",  via: "get"
-  match "/products", to: "pages#contact", via: "get"
+  match "/products", to: "pages#products", via: "get"
+  match "/shoppingbag", to: "pages#shoppingbag", via: "get"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
