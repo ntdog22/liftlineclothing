@@ -1,0 +1,595 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+html, body {
+	height: 100%;
+	margin: 0 0 0 0;
+	padding-top: 0px;
+	overflow-x: hidden;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+
+img {
+	margin: 0 auto;
+	display: block;
+	z-index: 100;
+}
+.splash_top_cont {
+	min-width: 100%;
+	height: 50%;
+	background-image: url(image_path('nose.jpg'));
+	background-size: cover;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	overflow: hidden;
+	a {
+	font-family: helvetica;
+			font-weight:  900;
+			color: white;
+			font-size: 2em;	
+			text-align: center;
+			opacity: 1;
+			z-index: 100;
+			margin-bottom: 0;
+			-webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+}
+a:hover {
+	text-decoration: none;
+	-webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    color:#666;
+}
+} 
+.splash_top_cont:hover {
+	opacity: .9;
+
+}
+#splash_top_cover {
+	min-width: 100%;
+	height: 100%;
+	background-color: rgba(black, .5);
+	background-size: cover;
+	opacity: .9;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+} 
+#splash_top_text_holder {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+		h2 {
+			font-family: helvetica;
+			font-weight:  900;
+			color: white;
+			font-size: 8em;	
+			text-align: center;
+			opacity: 1;
+			z-index: 100;
+			margin-bottom: 0;
+		}
+		ul {
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin: 0 0 0 0;
+		}
+}
+.splash_bottom_cont {
+	min-width: 100%;
+	height: 50%;
+	background-image: url(image_path('blunt.jpg'));
+	background-size: cover;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	overflow: hidden;
+	opacity: 1;
+		a {
+	font-family: helvetica;
+			font-weight:  900;
+			color: white;
+			font-size: 2em;	
+			text-align: center;
+			opacity: 1;
+			z-index: 100;
+			margin-bottom: 0;
+			-webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+
+}
+a:hover {
+	text-decoration: none;
+	-webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    color: #666;
+}
+}
+.splash_bottom_cont:hover {
+	opacity: .9;
+}
+#splash_bottom_cover {
+	min-width: 100%;
+	height: 100%;
+	background-color: rgba(black, .5);
+	background-size: cover;
+	opacity: .9;
+	z-index: 0;
+	position: absolute;
+	top: 50%;
+	overflow: hidden;
+} 
+#splash_bottom_text_holder {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+		h2 {
+			font-family: helvetica;
+			font-weight: 900;
+			color: white;
+			font-size: 8em;
+			text-align: center;
+			opacity: 1;
+			z-index: 100;
+			margin-bottom: 0;
+		}
+		ul {
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin: 0 0 0 0;
+		}
+		h2 :hover {
+			color: red;
+		}
+}
+
+/*HOme Page*/
+
+
+center {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+.main_video {
+  
+  min-height: 100%;
+  min-width: 100%;
+  border: none;
+  position: relative;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  margin-top: 0;
+  img{
+  	
+  	min-height: 100%;
+  	min-width: 100%;
+
+  }
+  
+}
+
+#video_container {
+  position: relative;
+  top: -10%;
+  left: 0%;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 0;
+
+}
+
+video {
+  position: absolute;
+  z-index: 0;
+  opacity: .8;
+  margin-top: -30;
+  padding-top: 0;
+  overflow: hidden;
+  top: -5em;
+  height: auto;
+  min-width: 100%;
+ 
+}
+
+video.fullwidth {
+  min-width: 100%;
+}
+
+video.fullheight {
+	min-height: auto;
+}
+ 
+  .overlay {
+    position:absolute;
+    top:20%;
+    left:0;
+    z-index:1;
+    margin-top: 0;
+    padding-top: 0;
+     	h2 {
+    	z-index: 0;
+    	position: absolute;
+    	top: 5%;
+    	left: 0%;
+    	color: white; 
+    	font-size: 5em;
+  	}
+
+}
+
+  .glidetext {
+    position: relative;
+    /*Set initial position of your text. Make it just enough to hide the text from view:*/
+    left: -500px;
+    color: white;
+    font-size:  5em;
+    font-family: helvetica;
+    font-weight: 900;
+    a {
+		color: white;
+    }
+}
+
+button {
+  font-size: 24px;
+  color: white;
+  background: none;
+  letter-spacing: .2em;
+  width: 100%;
+  border: 2px solid white;
+
+}
+
+
+.page_title
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+      
+      h3 {
+        font-weight: 900;
+        font-family: helvetica;
+        font-size: 4em;
+        margin-top: 0;
+        padding-top: 0;
+        letter-spacing: .2em;
+      }
+}
+.footer {
+  position: relative;
+  margin-top: -46px; /* negative value of footer height */
+  height: 46px;
+  clear:both;
+  padding-top:20px;
+  background-color: #fff;
+  background-size: cover;
+  overflow: hidden;
+  ul {
+ 		
+		text-align: center;
+		letter-spacing: 1em;
+  }
+  	li {
+display: inline-block;
+  		list-style-type: none;
+  		text-align: center;
+  		padding-left: 0px;
+  		padding-right: 4%;
+  		
+  	}
+  	a {
+  		color: #666;
+  		font-family: helvetica;
+  		font-weight: 400;
+  	}
+  	p {
+  		font-size: 1em;
+  	}
+} 
+
+
+
+.custom_nav {
+	position: fixed;
+	top: 0;
+	min-width: 100%;
+	background-color: #666;
+	z-index: 999;
+	perspective: 1000;
+	ul {
+		
+	}
+	li{
+		display: inline-block;
+	}
+}
+.custom_nav:hover  .flipper, .custom_nav.hover .flipper{
+	transform: rotate(180deg);
+}
+.custom_nav, .front, .back {
+
+}
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+/*about page shit */
+
+.about-image {
+	min-width: 100%;
+
+}
+
+.about_bottom {
+	min-width: 100%;
+	height: 400px;
+	display: block;
+	 background-image: url(<%= asset_path '489227.jpeg', width: "100%" %>);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hidden { display: none; }
+
+/*flash*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.contact_footer_push {
+	margin-top: 6%;
+}
+
+form {
+	min-width: 100%;
+
+}
+
+input {
+	width: 50%;
+	margin-top: 1%;
+
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+	width: 50%;
+	margin-top: 1%;
+	margin-right: 2%;
+	height: 100px;
+}
+textarea.message {
+	display: block;
+}
+input.button {
+	width: 25%;
+	background-color: #333333;
+	border-color: #333333;
+}
+.contact {
+	min-height: 100%;
+	min-width: 100%;
+	background-image: url(image_path('shop.jpg'));
+	background-size: cover;
+	overflow: hidden;
+}
+.footer_main {
+	display: block;
+	width: 90%;
+	height: auto;
+	margin-left: 0%;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	float: left;
+	position: relative;
+	text-align: center;
+	left: 5%;
+}
+.social {
+	width: 10%;
+	float: right;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left:  0;
+	padding-right:0;
+	margin-top: -10px;
+	padding-top: 0;
+	position: relative;
+	display: inline-block;
+	right: 0;
+	height: 100%;
+	ul {
+	display: inline-block;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left:0;
+	margin-right:  -10px;
+	top: 0;
+}
+li {
+	display: inline-block;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right:  -10px;
+}
+img {
+padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;	
+}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1300px) {
+#video_container {
+  position: relative;
+  top: -10%;
+  left: 0%;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  margin-top: 0;
+  padding-top: 0;
+
+}
+
+video {
+  position: absolute;
+  z-index: 0;
+  opacity: .8;
+  margin-top: -30;
+  padding-top: 0;
+  overflow: hidden;
+  top: -13%;
+  height: auto;
+  min-width: 100%;
+ 
+ }
+ .glidetext {
+    position: relative;
+    /*Set initial position of your text. Make it just enough to hide the text from view:*/
+    left: -500px;
+    color: white;
+    font-size:  7em;
+    font-family: helvetica;
+    font-weight: 900;
+    a {
+		color: white;
+    }
+}
+.contact {
+	min-height: 100%;
+	min-width: 100%;
+	background-image: url(image_path('shop.jpg'));
+	background-size: cover;
+	overflow: hidden;
+	h3 {
+		font-size: 2.5em;
+	}
+}
+.contact_footer_push {
+	margin-top: 7.5%;
+}
+
+form {
+	min-width: 100%;
+
+}
+
+input {
+	width: 50%;
+	margin-top: 1%;
+
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+	width: 50%;
+	margin-top: 1%;
+	margin-right: 1%;
+	height: 300px;
+}
+textarea.message {
+	display: block;
+}
+input.button {
+	width: 35%;
+	background-color: #333333;
+	border-color: #333333;
+}
+}

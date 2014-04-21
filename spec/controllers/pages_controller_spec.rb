@@ -30,4 +30,9 @@ describe PagesController do
     end
   end
 
+  describe "GET 'shoppingbag'"
+    it "returns http success" do
+      get 'shoppingbag'
+      response.should be_success
+    end
 end

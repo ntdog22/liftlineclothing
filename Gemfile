@@ -15,6 +15,11 @@ group :development, :test do
   gem 'rails_layout'
 end
 
+
+gem 'sass-mediaqueries-rails', '1.3'
+gem 'mail_form', '1.5.0'
+gem 'simple_form', '3.0.1'
+
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
@@ -45,6 +50,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -56,8 +62,12 @@ end
 # Use unicorn as the app server
 # gem 'unicorn'
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development
+
+
+
+gem 'thin'
+gem 'therubyracer'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

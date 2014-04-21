@@ -1,0 +1,27 @@
+<% provide(:title, 'CONTACT') %>
+<%= render 'layouts/navigation' %>
+<div class="contact">
+  <br>
+  <br>
+  <br>
+  <br>
+  <div align="center">
+    <h3 style="padding-left: 20%; padding-right: 20%;">Lift Line Clothing is always happy to hear from you. Please send any comments or questions to contact@liftlineclothing.com . We do not have any established phone number, but we will try to get back to you as soon as possible!</h3>
+    <br>
+    <h1>Send A message to Us</h1>
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+    </br>
+    <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+  </div>
+  <% end %>
+</div>
+<div class="contact_footer_push">
+</div>
+<%= render 'layouts/footer' %>

@@ -1,0 +1,23 @@
+<footer class="footer">
+<div class="footer_main">
+			<ul>
+				<li><p>
+<% if mobile_device? %>
+	<%= link_to "Full Site", :mobile => 0 %>
+<% else %>
+	<%= link_to "Mobile Site", :mobile => 1 %>
+<% end %>
+</p></li>
+<li><p>|</p></li>
+<li><%= link_to "Career", root_path %></li>
+<li><p>|</p></li>
+<li><%= link_to "Sponsor Me", root_path %></li>
+</ul>
+</div>
+<ul class=" social ">
+<li><%= link_to image_tag("facebook.png", alt: "Liftline", size: "32x32"), 'https://www.facebook.com/lift.line.5?fref=ts' %></li>
+<li><%= link_to image_tag("instagram.png", alt: "Liftline", size: "32x32"), 'http://ink361.com/app/users/ig-199425162/photos' %></li>
+<li><%= link_to image_tag("youtube.png", alt: "Liftline", size: "32x32"), 'images/facebook.png' %></li>
+</ul>
+
+</footer>

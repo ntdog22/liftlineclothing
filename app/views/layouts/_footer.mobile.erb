@@ -1,0 +1,9 @@
+<footer>
+<p>
+<% if mobile_device? %>
+	<%= link_to "Full Site", :mobile => 0 %>
+<% else %>
+	<%= link_to "Mobile Site", :mobile => 1 %>
+<% end %>
+</p>
+</footer>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://0.0.0.0:3000/?size=16x16 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Liftline</title>
+  <link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/application.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/contacts.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/custom.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/mobile.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/pages.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/supports.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/users.css?body=1" media="all" rel="stylesheet">
+  
+  <script data-turbolinks-track="true" src="./Liftline_files/jquery.js"></script><style type="text/css"></style>
+<script data-turbolinks-track="true" src="./Liftline_files/jquery_ujs.js"></script>
+<script data-turbolinks-track="true" src="./Liftline_files/turbolinks.js"></script>
+<script data-turbolinks-track="true" src="./Liftline_files/contacts.js"></script>
+<script data-turbolinks-track="true" src="./Liftline_files/mobile.js"></script>
+<script data-turbolinks-track="true" src="./Liftline_files/pages.js"></script>
+<script data-turbolinks-track="true" src="./Liftline_files/supports.js"></script>
+<script data-turbolinks-track="true" src="./Liftline_files/users.js"></script>
+<script data-turbolinks-track="true" src="./Liftline_files/application.js"></script>
+ <script type="text/javascript" src="./Liftline_files/jquery-2.0.2.js"></script>
+<script type="text/javascript" src="./Liftline_files/bootstrap.min.js"></script>
+
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="ZzKE+FZEU6BYUg5BiirY3ptQDkqmgHPrUTyEzT2hbfA=" name="csrf-token">
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-wrapper">  
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="http://0.0.0.0:3000/products">SHOP</a></li>
+          <li><a href="http://0.0.0.0:3000/">LIFE</a></li>
+          <li class=""></li>
+        </ul>
+        <div class="page_title">
+        <h3>HOME</h3>
+        </div>
+        <ul class="nav navbar-nav navbar-right ">
+          <li><a href="http://0.0.0.0:3000/">Home</a></li>   
+          <li><a href="http://0.0.0.0:3000/products">Clothing</a></li>
+          <li><a href="http://0.0.0.0:3000/about">About</a></li>
+          <li><a href="http://0.0.0.0:3000/contacts/new">Contact</a></li>
+          <li><a href="http://0.0.0.0:3000/" style="color: #387497;">Sign In</a></li>
+        </ul>
+        <div class="clearfix visible-xs"></div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript">
+
+//Sequential fly-in text script- by JavaScriptKit.com
+//For this script and 400+ more, visit http://www.javascriptkit.com
+//This notice must stay intact for use
+
+var pausebetweenmsg=10 //customize pause in miliseconds between each message showing up (3000=3 seconds)
+var glidespeed=50 //customize glide speed in pixels per frame.
+
+var curobjindex=0
+
+function actualstyle(el, cssproperty){
+if (el.currentStyle)
+return el.currentStyle[cssproperty]
+else if (window.getComputedStyle){
+var elstyle=window.getComputedStyle(el, "")
+return elstyle.getPropertyValue(cssproperty)
+}
+}
+
+function collectElementbyClass(){
+var classname="glidetext"
+glidearray=new Array()
+var inc=0
+var alltags=document.all? document.all : document.getElementsByTagName("*")
+for (i=0; i<alltags.length; i++){
+if (alltags[i].className==classname)
+glidearray[inc++]=alltags[i]
+}
+if (glidearray.length>0)
+onebyoneglide()
+}
+
+function onebyoneglide(){
+if (curobjindex<glidearray.length)
+glidetimer=setInterval("glideroutine()",50)
+}
+
+function glideroutine(){
+if (parseInt(actualstyle(glidearray[curobjindex], "left"))<0)
+glidearray[curobjindex].style.left=parseInt(actualstyle(glidearray[curobjindex], "left"))+50+"px"
+else{
+glidearray[curobjindex].style.left=0
+curobjindex++
+clearInterval(glidetimer)
+setTimeout("onebyoneglide()", pausebetweenmsg)
+}
+}
+
+if (window.addEventListener)
+window.addEventListener("load", collectElementbyClass, false)
+else if (window.attachEvent)
+window.attachEvent("onload", collectElementbyClass)
+else if (document.getElementById)
+window.onload=collectElementbyClass
+
+</script>
+<div class="main_video">
+
+	<div id="video-container">
+	
+		 <video autobuffer="autobuffer" autoplay="autoplay" class="fullwidth fullheight" loop="loop" muted="muted" src="/assets/movie1.mp4"></video>
+
+		
+
+	</div><!-- end video-container -->
+</div><!-- end .header-unit -->
+
+
+<div class="overlay">
+<div class="glidetext" style="left: 0px;">WE</div>
+<div class="glidetext" style="left: 0px;">ARE</div>
+<div class="glidetext" style="left: 0px;">LIFTLINE</div>
+<div class="glidetext" style="left: 0px;"><a href="http://0.0.0.0:3000/images/logo.png"><img alt="Liftline" height="64" src="./Liftline_files/logo.png" style="z-index: 100;" width="64"></a></div>
+<div class="glidetext" style="left: 0px;">
+<button type="button"><a href="http://0.0.0.0:3000/products" match="get">Lets Shop</a></button>
+</div>
+</div>
+
+<footer class="footer">
+<div class="footer_main">
+			<ul>
+				<li><p>
+	<a href="http://0.0.0.0:3000/?mobile=1">Mobile Site</a>
+</p></li>
+<li><p>|</p></li>
+<li><a href="http://0.0.0.0:3000/">Career</a></li>
+<li><p>|</p></li>
+<li><a href="http://0.0.0.0:3000/">Sponsor Me</a></li>
+</ul>
+</div>
+<ul class=" social ">
+<li><a href="http://0.0.0.0:3000/images/facebook.png"><img alt="Liftline" height="32" src="./Liftline_files/facebook.png" width="32"></a></li>
+<li><a href="http://0.0.0.0:3000/images/facebook.png"><img alt="Liftline" height="32" src="./Liftline_files/twitter.png" width="32"></a></li>
+<li><a href="http://0.0.0.0:3000/images/facebook.png"><img alt="Liftline" height="32" src="./Liftline_files/youtube.png" width="32"></a></li>
+</ul>
+
+</footer>
+
+
+
+
+
+</body></html>

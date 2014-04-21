@@ -1,9 +1,12 @@
 Liftline::Application.routes.draw do
+  resources :supports
+
   get "users/new"
   root "pages#home"
    match "/splash", to: "pages#splash",      via: "get"
   match "/about", to: "pages#about",      via: "get"
-  match "/contact", to: "pages#contact",  via: "get"
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+
   match "/products", to: "pages#products", via: "get"
   match "/shoppingbag", to: "pages#shoppingbag", via: "get"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -20,6 +23,9 @@ Liftline::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+
+resources "contacts", only: [:new, :create]
+
 
   # Example resource route with options:
   #   resources :products do

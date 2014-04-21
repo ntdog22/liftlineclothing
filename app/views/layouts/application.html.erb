@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Liftline</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
- <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
-  <%= csrf_meta_tags %>
+	<%= favicon_link_tag 'favicon.ico' %>
+	<title>Liftline</title>
+	<%= stylesheet_link_tag     "application", media: "all", "data-turbolinks-track" => true %>
+	<%= stylesheet_link_tag	  "mobile" if mobile_device? %>
+	<%= javascript_include_tag  "application", "data-turbolinks-track" => true %>
+	<script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+	<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-
-
-<%= yield %>
-
+	<%= yield %>
 </body>
 </html>
