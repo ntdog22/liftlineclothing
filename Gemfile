@@ -1,4 +1,4 @@
-ruby '2.1.1'
+
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -16,9 +16,7 @@ group :development, :test do
   gem 'rails_layout'
 end
 
-group :development do
-  gem 'sqlite3', '1.3.8'
-end
+gem 'rails_12factor'
 
 gem 'sass-mediaqueries-rails', '1.3'
 gem 'mail_form', '1.5.0'
@@ -77,4 +75,6 @@ gem 'therubyracer'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+ruby '2.1.1'
 
