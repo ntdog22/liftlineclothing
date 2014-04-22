@@ -1,3 +1,4 @@
+ruby '2.1.1'
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -6,7 +7,7 @@ gem 'bootstrap-sass', '3.0.3.0'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
+  
   gem 'rspec-rails', '2.13.1'
   gem 'guard-rspec'
   gem 'spork-rails'
@@ -15,6 +16,9 @@ group :development, :test do
   gem 'rails_layout'
 end
 
+group :development do
+  gem 'sqlite3', '1.3.8'
+end
 
 gem 'sass-mediaqueries-rails', '1.3'
 gem 'mail_form', '1.5.0'
@@ -64,7 +68,9 @@ end
 
 gem 'capistrano', group: :development
 
-
+group :test, :production do
+  gem 'pg'
+end
 
 gem 'thin'
 gem 'therubyracer'
