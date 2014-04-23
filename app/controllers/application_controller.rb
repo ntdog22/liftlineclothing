@@ -2,8 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  before_filter :prepare_for_mobile
-  before_filter :set_cache_headers
+  before_filter :prepare_for_mobile, :set_cache_headers
 private 
   def mobile_device?
   	if session[:mobile_param]

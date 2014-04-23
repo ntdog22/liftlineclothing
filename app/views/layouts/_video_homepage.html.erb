@@ -67,12 +67,12 @@ window.onload=collectElementbyClass
 </div><!-- end .header-unit -->
 
 
-<div class="overlay">
-<div class="glidetext">WE</div>
-<div class="glidetext">ARE</div>
-<div class="glidetext">LIFTLINE</div>
-<div class="glidetext"><%= link_to image_tag("whitelogo.png", alt: "Liftline", size: "64x64", style: "z-index: 100;"), 'images/logo.png' %></div>
-<div class="glidetext">
-<button type="button"><%= link_to 'Lets Shop', products_path, :match => 'get' %></button>
+<div class="overlay" data-no-turbolink>
+<div class="glidetext" data-no-turbolink>WE</div>
+<div class="glidetext" data-no-turbolink>ARE</div>
+<div class="glidetext" data-no-turbolink>LIFTLINE</div>
+<div class="glidetext" data-no-turbolink><%= link_to image_tag("whitelogo.png", alt: "Liftline", size: "64x64", style: "z-index: 100;"), 'images/logo.png' %></div>
+<div class="glidetext" data-no-turbolink>
+<button type="button" data-no-turbolink><%= link_to 'Lets Shop', products_path, :match => 'get' %></button>
 </div>
 </div>
