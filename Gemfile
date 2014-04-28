@@ -72,7 +72,7 @@ end
 
 gem 'thin'
 gem 'therubyracer'
-gem 'rails_12factor'
+gem 'jquery-turbolinks'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
